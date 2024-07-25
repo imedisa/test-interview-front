@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="" href="./assets/icons/Logo.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <div class="container mx-auto px-40 py-10">
+      <!-- HEADER -->
+      <header class="flex justify-between items-center  bg-white  ">
+        <!-- LOGO -->
+        <img src="./assets/icons/Logo.svg" alt="logo" />
+        <!-- MENU -->
+        <div class="font-medium top-4">
+          <ul class="flex gap-x-10">
+            <li class="hover:text-green-500 transition-colors">
+              <a href="#about">About</a>
+            </li>
+            <li class="hover:text-green-500 transition-colors">
+              <a href="#skills" class="">Skills</a>
+            </li>
+            <li class="hover:text-green-500 transition-colors">
+              <a href="#projects">Portfolio</a>
+            </li>
+            <li class="hover:text-green-500 transition-colors">
+              <a href="#Testimonial">Testimonial</a>
+            </li>
+          </ul>
+        </div>
+        <!-- BUTTON -->
+        <a
+          href="./assets/pdf/myfile.pdf"
+          download=""
+          class="border-2 border-green-500 hover:bg-green-600 hover:text-white transition-colors rounded-lg bg-transparent px-6 py-4"
+          >Download CV</a
+        >
+      </header>
+      <!-- LANDING -->
+      <div id="about" class="mt-32 grid grid-cols-2 items-center relative">
+        <div class="">
+          <div class="text-green-500 text-xl font-medium mb-2">welcome</div>
+          <div
+            class="text-[58px] font-semibold leading-[70px] mb-6 text-nowrap"
+          >
+            I have <span class="text-green-500 font-bold"> Creative</span><br />
+            <span class="text-green-500 font-bold">Design</span> Experience
+          </div>
+          <div class="text-base font-normal text-zinc-600">
+            I’m Tanvir, a creative Product Designer. I’ve been helping
+            businesses <br />
+            to solve their problems with my design for 2 years.
+          </div>
+          <div class="mt-10 flex gap-6 items-center">
+            <button
+              class="bg-green-500 hover:bg-green-700 transition-colors text-white rounded-lg"
+            >
+              Contact Me
+            </button>
+            <a class="flex items-center gap-6">
+              <div href="#" class="font-medium">View Portfolio</div>
+              <img src="./assets/icons/Frame.svg" alt="" />
+            </a>
+          </div>
+        </div>
+        <div class="flex justify-end items-center absolute right-[-120px]">
+          <img src="./assets/images/Group 9022.png" class="scale-90" />
+          <div class="flex flex-col items-center gap-8 mt-14">
+            <div class="rotate-90 text-green-500 text-nowrap">
+              Follow me on:
+            </div>
+            <span class="bg-green-500 h-16 content-none mt-8 w-[1px]"></span>
+            <a href="#"
+              ><div
+                class="bg-green-500 hover:bg-green-700 w-5 h-5 rounded-[5px] flex justify-center items-center"
+              >
+                <img src="./assets/icons/facebook.svg" alt="" /></div
+            ></a>
+            <a href="#"
+              ><div
+                class="bg-green-500 hover:bg-green-700 w-5 h-5 rounded-[5px] flex justify-center items-center"
+              >
+                <img src="./assets/icons/instagram.svg" alt="" /></div
+            ></a>
+            <a href="#"
+              ><div
+                class="bg-green-500 hover:bg-green-700 w-5 h-5 rounded-[5px] flex justify-center items-center"
+              >
+                <img src="./assets/icons/linkedin.svg" alt="" /></div
+            ></a>
+          </div>
+        </div>
+      </div>
+      <!-- WORK STATUS -->
+      <div class="flex justify-between items-center mt-36">
+        <div class="">
+          <span class="font-semibold text-4xl text-green-500 mb-6">80 +</span>
+          <div class="text-[28px]">Satisfied clients</div>
+        </div>
+        <span class="bg-green-500 h-24 content-none mt-8 w-[1px]"></span>
+
+        <div class="">
+          <span class="font-semibold text-4xl text-green-500 mb-6">200 +</span>
+          <div class="text-[28px]">Projects completed</div>
+        </div>
+        <span class="bg-green-500 h-24 content-none mt-8 w-[1px]"></span>
+
+        <div class="">
+          <span class="font-semibold text-4xl text-green-500 mb-6">99 +</span>
+          <div class="text-[28px]">Reviews given</div>
+        </div>
+      </div>
+      <!-- MY SKILLS -->
+      <div id="skills" class="mt-44 grid grid-cols-2 items-center gap-x-16">
+        <div class="">
+          <div class="text-green-500 text-xl font-medium mb-2">My Skills</div>
+          <div class="text-[40px] font-semibold mb-6 text-nowrap">
+            Why Hire Me ForYour <br />
+            Next <span class="text-green-500"> Project? </span>
+          </div>
+          <div class="text-base font-normal text-zinc-600">
+            I’m Tanvir, a creative Product Designer. I’ve been helping
+            businesses <br />
+            to solve their problems with my design for 2 years.
+          </div>
+          <div class="mt-10 flex gap-6 items-center">
+            <button
+              class="bg-green-500 hover:bg-green-700 transition-colors text-white rounded-lg"
+            >
+              Hire Me
+            </button>
+          </div>
+        </div>
+        <div class="flex items-center gap-[30px] justify-end">
+          <div class="flex flex-col items-center gap-[30px]">
+            <div>
+              <img src="./assets/icons/diamond-outline (2) 1.svg" alt="" />
+              <div class="font-semibold text-xl mt-4 mb-3">Visual Design</div>
+              <div class="text-zinc-600 text-sm max-w-56">
+                Create user interface design with unique & modern ideas
+              </div>
+            </div>
+            <div>
+              <img src="./assets/icons/school-outline 1.svg" alt="" />
+              <div class="font-semibold text-xl mt-4 mb-3">UX Research</div>
+              <div class="text-zinc-600 text-sm max-w-56">
+                Create digital user products with updated ideas
+              </div>
+            </div>
+          </div>
+          <div>
+            <img src="./assets/icons/pulse-outline 1.svg" alt="" />
+            <div class="font-semibold text-xl mt-4 mb-3">Design Prototype</div>
+            <div class="text-zinc-600 text-sm max-w-56">
+              Create advance design prototype with Figma apps.
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- MY PROJECTS -->
+      <div id="projects" class="mt-44">
+        <div class="mt-44 grid grid-cols-2 items-center gap-x-16">
+          <div class="">
+            <div class="text-green-500 text-xl font-medium mb-2">Portfolio</div>
+            <div class="text-[40px] font-semibold mb-6 text-nowrap">
+              My Creative Works
+              <br />
+              Latest <span class="text-green-500"> Projects </span>
+            </div>
+            <div class="text-base font-normal text-zinc-600">
+              I have selected and mentioned here some of my latest projects to
+              share with you.
+            </div>
+            <div class="mt-10 flex gap-6 items-center">
+              <button
+                class="bg-green-500 hover:bg-green-700 transition-colors text-white rounded-lg"
+              >
+                Show More
+              </button>
+            </div>
+          </div>
+          <div>
+            <!-- image slider -->
+          </div>
+        </div>
+      </div>
+      <!-- COMMENT SECTION -->
+      <div class="mt-44">
+        <div class="mt-44 grid grid-cols-2 items-center gap-x-16">
+          <div class="">
+            <div class="text-green-500 text-xl font-medium mb-2">Portfolio</div>
+            <div class="text-[40px] font-semibold mb-6 text-nowrap">
+              Our Customer Say
+              <br />
+              Something <span class="text-green-500"> About Us </span>
+            </div>
+
+            <div class="mt-10 flex gap-6 items-center">
+              <button
+                class="bg-green-500 hover:bg-green-700 transition-colors text-white rounded-lg"
+              >
+                Show More
+              </button>
+            </div>
+          </div>
+          <div>
+            <!-- FLESH -->
+          </div>
+        </div>
+        <div>
+          <!-- COMMENTS CONTENT -->
+        </div>
+      </div>
+      <!-- FORM -->
+      <div id="Testimonial" class="mt-44">
+        <div class="flex flex-col justify-center items-center">
+          <div class="text-center">
+            <div class="text-green-500 text-xl font-medium mb-2">Contact</div>
+            <div class="text-[40px] font-semibold mb-6 max-w-lg text-nowrap">
+              Let’s Discuss Your <span class="text-green-500"> Project </span>
+            </div>
+            <div class="text-base font-normal text-zinc-600 max-w-lg">
+              Let’s make something new, different and more meaningful or make
+              thing more visual or conceptual
+            </div>
+          </div>
+        </div>
+        <div class="grid grid-cols-12 gap-x-14 items-center mt-16">
+          <!-- CONTACT ME -->
+          <div class="col-span-5 h-[587px]">
+            <div class="gap-6 flex flex-col justify-between">
+              <div class="gap-4 flex items-center py-7 px-5">
+                <div
+                  class="bg-green-500 hover:bg-green-700 w-14 h-14 rounded-lg flex justify-center items-center"
+                >
+                  <img src="./assets/icons/call.svg" alt="" />
+                </div>
+                <div>
+                  <div class="text-zinc-600">Call me</div>
+                  <div class="font-medium text-nowrap">+8801613968687</div>
+                </div>
+              </div>
+              <div class="gap-4 flex items-center py-7 px-5">
+                <div
+                  class="bg-green-500 hover:bg-green-700 transition-colors w-14 h-14 rounded-lg flex justify-center items-center"
+                >
+                  <img src="./assets/icons/gmail.svg" alt="" />
+                </div>
+                <div>
+                  <div class="text-zinc-600">Email me</div>
+                  <div class="font-medium text-nowrap">
+                    ahmedtanvir8687@gmail.com
+                  </div>
+                </div>
+              </div>
+              <div class="gap-4 flex items-center py-7 px-5">
+                <div
+                  class="bg-green-500 hover:bg-green-700 transition-colors w-14 h-14 rounded-lg flex justify-center items-center"
+                >
+                  <img src="./assets/icons/location.svg" alt="" />
+                </div>
+                <div>
+                  <div class="text-zinc-600">Address</div>
+                  <div class="font-medium text-nowrap">
+                    Zakigonj, Sylhet, Bangladesh.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- FORM -->
+          <div class="col-span-7">
+            <form action="" id="contactForm" onsubmit="return validateForm()">
+              <div class="">
+                <div class="grid grid-cols-2 gap-6">
+                  <input
+                    id="fullName"
+                    placeholder="Full name"
+                    class="border border-zinc-200 rounded-lg px-6 py-4 focus:border-green-600 focus:ring-1 focus:ring-green-600 hover:border-zinc-400 transition-colors focus:outline-none"
+                    type="text"
+                    required
+                    minlength="2"
+                    maxlength="50"
+                  />
+                  <input
+                    id="email"
+                    placeholder="Your email"
+                    class="border border-zinc-200 rounded-lg px-6 py-4 focus:border-green-600 focus:ring-1 focus:ring-green-600 hover:border-zinc-400 transition-colors focus:outline-none"
+                    type="email"
+                    required
+                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                  />
+                  <input
+                    id="phone"
+                    placeholder="Phone number"
+                    class="border border-zinc-200 rounded-lg px-6 py-4 focus:border-green-600 focus:ring-1 focus:ring-green-600 hover:border-zinc-400 transition-colors focus:outline-none"
+                    type="tel"
+                    required
+                    pattern="[0-9]{10}"
+                  />
+                  <input
+                    id="budget"
+                    placeholder="Budget"
+                    class="border border-zinc-200 rounded-lg px-6 py-4 focus:border-green-600 focus:ring-1 focus:ring-green-600 hover:border-zinc-400 transition-colors focus:outline-none"
+                    type="number"
+                    min="0"
+                    step="0.01"
+                    required
+                  />
+                </div>
+
+                <div class="grid grid-cols-1 mt-6">
+                  <textarea
+                    id="message"
+                    placeholder="Message"
+                    class="border border-zinc-200 rounded-lg px-6 py-4 focus:border-green-600 focus:ring-1 focus:ring-green-600 hover:border-zinc-400 transition-colors focus:outline-none"
+                    name=""
+                    cols="30"
+                    rows="10"
+                    required
+                    minlength="10"
+                    maxlength="500"
+                  ></textarea>
+                </div>
+              </div>
+
+              <div class="flex justify-end">
+                <button
+                  type="submit"
+                  class="mt-10 bg-green-600 text-white px-6 py-4 rounded-lg hover:bg-green-700 transition-colors"
+                >
+                  Submit Message
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <!-- FOOTER -->
+      <div class="mt-32">
+        <div class="border-t pt-10 pb-8 flex justify-between items-center">
+          <div class="">@ 2022. All Rights Reserved</div>
+          <div class="text-center">Designed by Tanvir Ahmed</div>
+          <div class="flex justify-end gap-4">
+            <a href="#"
+              ><div
+                class="bg-green-500 hover:bg-green-700 w-6 h-6 rounded-full flex justify-center items-center"
+              >
+                <img src="./assets/icons/facebook.svg" alt="" /></div></a
+            ><a href="#"
+              ><div
+                class="bg-green-500 hover:bg-green-700 w-6 h-6 rounded-full flex justify-center items-center"
+              >
+                <img src="./assets/icons/twitter.svg" alt="" /></div></a
+            ><a href="#"
+              ><div
+                class="bg-green-500 hover:bg-green-700 w-6 h-6 rounded-full flex justify-center items-center"
+              >
+                <img src="./assets/icons/linkedin.svg" alt="" /></div></a
+            ><a href="#"
+              ><div
+                class="bg-green-500 hover:bg-green-700 w-6 h-6 rounded-full flex justify-center items-center"
+              >
+                <img src="./assets/icons/instagram.svg" alt="" /></div
+            ></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
