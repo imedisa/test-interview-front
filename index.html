@@ -8,13 +8,54 @@
 
     <title>Portfolio</title>
   </head>
-  <body>
+  <body class="pt-20">
     <div class="container mx-auto px-40 py-10">
       <!-- HEADER -->
-      <header class="flex justify-between items-center  bg-white  ">
-        <!-- LOGO -->
+      <div
+        x-data="{ scrolled: false }"
+        @scroll.window="scrolled = (window.pageYOffset > 20)"
+        class="fixed top-0 left-0 right-0 z-50 transition-all duration-300"
+        :class="{'bg-white shadow-md': scrolled, 'bg-transparent': !scrolled}"
+      >
+        <div class="container mx-auto px-4">
+          <header
+            class="flex justify-between items-center py-4 transition-all duration-300"
+            :class="{'py-2': scrolled, 'py-4': !scrolled}"
+          >
+            <!-- LOGO -->
+            <img src="./assets/icons/Logo.svg" alt="logo" />
+
+            <!-- MENU -->
+            <div class="font-medium">
+              <ul class="flex gap-x-10">
+                <li class="hover:text-green-500 transition-colors">
+                  <a href="#about">About</a>
+                </li>
+                <li class="hover:text-green-500 transition-colors">
+                  <a href="#skills" class="">Skills</a>
+                </li>
+                <li class="hover:text-green-500 transition-colors">
+                  <a href="#projects">Portfolio</a>
+                </li>
+                <li class="hover:text-green-500 transition-colors">
+                  <a href="#Testimonial">Testimonial</a>
+                </li>
+              </ul>
+            </div>
+
+            <!-- BUTTON -->
+            <a
+              href="./assets/pdf/myfile.pdf"
+              download=""
+              class="border-2 border-green-500 hover:bg-green-600 hover:text-white transition-colors rounded-lg bg-transparent px-6 py-2"
+            >
+              Download CV
+            </a>
+          </header>
+        </div>
+      </div>
+      <!-- <header class="flex justify-between items-center bg-white">
         <img src="./assets/icons/Logo.svg" alt="logo" />
-        <!-- MENU -->
         <div class="font-medium top-4">
           <ul class="flex gap-x-10">
             <li class="hover:text-green-500 transition-colors">
@@ -31,14 +72,13 @@
             </li>
           </ul>
         </div>
-        <!-- BUTTON -->
         <a
           href="./assets/pdf/myfile.pdf"
           download=""
           class="border-2 border-green-500 hover:bg-green-600 hover:text-white transition-colors rounded-lg bg-transparent px-6 py-4"
           >Download CV</a
         >
-      </header>
+      </header> -->
       <!-- LANDING -->
       <div id="about" class="mt-32 grid grid-cols-2 items-center relative">
         <div class="">
@@ -182,9 +222,9 @@
               </button>
             </div>
           </div>
-          <div>
-            <!-- image slider -->
-          </div>
+          <!-- image slider -->
+
+          <div></div>
         </div>
       </div>
       <!-- COMMENT SECTION -->
@@ -210,9 +250,8 @@
             <!-- FLESH -->
           </div>
         </div>
-        <div>
-          <!-- COMMENTS CONTENT -->
-        </div>
+        <!-- COMMENTS CONTENT -->
+        <div></div>
       </div>
       <!-- FORM -->
       <div id="Testimonial" class="mt-44">
