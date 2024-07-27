@@ -6,6 +6,25 @@ import Alpine from "alpinejs";
 window.Alpine = Alpine;
 Alpine.start();
 
+document.addEventListener("alpine:init", () => {
+  Alpine.data("imageSlider", () => ({
+    currentIndex: 0,
+    images: [
+      { src: "assets/images/project1.jpg", alt: "Project 1" },
+      { src: "assets/images/project2.jpg", alt: "Project 2" },
+      { src: "assets/images/project3.jpg", alt: "Project 3" },
+      // Add more images as needed
+    ],
+    next() {
+      this.currentIndex = (this.currentIndex + 1) % this.images.length;
+    },
+    prev() {
+      this.currentIndex =
+        (this.currentIndex - 1 + this.images.length) % this.images.length;
+    },
+  }));
+});
+
 function validateForm() {
   const fullName = document.getElementById("fullName").value;
   const email = document.getElementById("email").value;
