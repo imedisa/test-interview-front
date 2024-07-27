@@ -13,6 +13,8 @@
     "vite": "^5.3.4"
   },
   "dependencies": {
-    "alpinejs": "^3.14.1"
+    "alpine-splide": "^1.2.0",
+    "alpinejs": "^3.14.1",
+    "embla-carousel": "^8.1.7"
   }
 }

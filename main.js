@@ -5,6 +5,11 @@ import { setupCounter } from "./counter.js";
 import Alpine from "alpinejs";
 window.Alpine = Alpine;
 Alpine.start();
+import Splide from 'alpine-splide'
+
+Alpine.data('Splide', Splide)
+
+// Alpine.start()
 
 document.addEventListener("alpine:init", () => {
   Alpine.data("imageSlider", () => ({
