@@ -1,4 +1,3 @@
-
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -19,9 +18,60 @@ body {
   min-width: 320px;
   min-height: 100vh;
 }
-button{
+
+button {
   height: 56px;
   font-weight: 500px;
   padding: 16px 24px;
 }
 
+.carousel {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.carousel-container {
+  display: flex;
+  overflow: hidden;
+}
+
+.carousel-slides {
+  display: flex;
+  transition: transform 0.3s ease;
+  width: 100%;
+}
+
+.slide {
+  flex: 0 0 calc(100% / 2.5); /* هر آیتم 40% از عرض container را می‌گیرد */
+  box-sizing: border-box;
+  padding: 1rem;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  margin: 0 0.5rem;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.controls {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  z-index: 1;
+  margin-top: 20px;
+}
+
+.controls button {
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 0.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.controls button:disabled {
+  background: rgba(0, 0, 0, 0.2);
+  cursor: not-allowed;
+}
