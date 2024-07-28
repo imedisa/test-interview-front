@@ -2,9 +2,10 @@ import "./assets/style.css";
 import javascriptLogo from "./javascript.svg";
 import viteLogo from "/vite.svg";
 import { setupCounter } from "./counter.js";
-import Alpine from "alpinejs";
-window.Alpine = Alpine;
-Alpine.start();
+import Alpine from 'alpinejs'
+
+window.Alpine = Alpine
+Alpine.start()
 
 function validateForm() {
   const fullName = document.getElementById("fullName").value;
@@ -23,3 +24,12 @@ function validateForm() {
   }
   return true;
 }
+
+import { defineConfig } from 'vite'
+
+export default defineConfig({
+  optimizeDeps: {
+    include: ['alpinejs']
+  }
+})
+

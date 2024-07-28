@@ -10,7 +10,7 @@
   },
   "devDependencies": {
     "tailwindcss": "^3.4.6",
-    "vite": "^5.3.4"
+    "vite": "^5.3.5"
   },
   "dependencies": {
     "alpinejs": "^3.14.1"
